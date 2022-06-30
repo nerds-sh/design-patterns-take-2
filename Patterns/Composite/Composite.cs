@@ -1,0 +1,32 @@
+using Patterns.Composite;
+
+namespace Patterns.Composite {
+    public class Composite {
+        public static void Run()
+        {
+        Developer dev1 = new Developer(1, "Radu", "Senior Developer");
+        Developer dev2 = new Developer(10, "Mihai", "Developer");
+        Company devDirectory = new Company();
+        devDirectory.addEmployee(dev1);
+        devDirectory.addEmployee(dev2);
+        
+        Manager mag1 = new Manager(3, "Ana", "General Manager");
+        Manager mag2 = new Manager(7, "Ana", "Manager");
+        Company magDirectory = new Company();
+        magDirectory.addEmployee(mag1);
+        magDirectory.addEmployee(mag2);
+
+        HR hr1 = new HR(20, "Adrian", "HR");
+        HR hr2 = new HR(18, "Antonia", "HR");
+        Company hrDirectory = new Company();
+        hrDirectory.addEmployee(hr1);
+        hrDirectory.addEmployee(hr2);
+
+        Company Directory = new Company();
+        Directory.addEmployee(devDirectory);
+        Directory.addEmployee(magDirectory);
+        Directory.addEmployee(hrDirectory);
+        Directory.showEmployeeDetails();
+        }
+    }
+}
