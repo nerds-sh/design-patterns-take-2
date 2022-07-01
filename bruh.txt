@@ -1,1 +1,0 @@
-Fisierul in care textul acesta se afla se rescrie de fiecare data la run.
