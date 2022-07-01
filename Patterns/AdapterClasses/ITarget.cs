@@ -1,13 +1,7 @@
 using System;
 namespace Patterns.AdapterClasses;
 
-public interface IEmployeeTarget {
-    string EmployeeList();
-}
-
-public class Employees {
-
-    public string GetEmployee(){
-        return "Mr. X, CEO";
+public interface ITarget
+    {
+        void ProcessSalary(string[,] employeesArray);
     }
-}

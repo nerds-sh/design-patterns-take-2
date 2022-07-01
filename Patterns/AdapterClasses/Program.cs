@@ -1,19 +1,21 @@
 ﻿using System;
 namespace Patterns.AdapterClasses;
 
-    public class bill
+class Program
     {
-
-        private IEmployeeTarget _employeeTarget;
-
-        public bill(IEmployeeTarget employeetarget)
+        public static void Run()
         {
-            _employeeTarget = employeetarget;
-        }
-
-        public void ShowEmployees()
-        {
-            string employeesInfo = _employeeTarget.EmployeeList();
-            Console.WriteLine("Employee:" + employeesInfo);
+            string[,] employeesArray = new string[5, 3] 
+            {
+                {"1","Mihai","12554"},
+                {"2","Alin","6112"},
+                {"3","Bogdan","6122"},
+                {"4","Gabriela","7142"},
+                {"5","Andreaa","9112"}
+            };
+            
+            ITarget target = new EmployeeAdapter();
+            target.ProcessSalary(employeesArray);
+            Console.Read();   
         }
     }
