@@ -3,7 +3,15 @@ namespace Patterns;
 
 public class ChainResp
 {
+<<<<<<< HEAD
+<<<<<<< HEAD
     public static void Run()
+=======
+    static void Run()
+>>>>>>> 691202e (first commit for Chain Responsibility)
+=======
+    public static void Run()
+>>>>>>> 556b3fd (add Run function)
     {
         Approver Amalia = new HeadChef();
         Approver Andrei = new PurchasingManager();
