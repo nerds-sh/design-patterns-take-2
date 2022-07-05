@@ -5,13 +5,13 @@ namespace Patterns.Mediator
         private List<User> users = new List<User>();
         public void sendMessage(string msg, string userID)
         {
-            User u = users.get(userID);
+            User u = users.FirstOrDefault(u => u.getID() == userID);
             u.receive(msg);
         }
 
         public void addUser(User user)
         {
-            this.users.set(user.getID(), user);
+            this.users.Add(user);
         }
     }
 }
