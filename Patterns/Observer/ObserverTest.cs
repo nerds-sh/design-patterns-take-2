@@ -1,11 +1,12 @@
 using ConcreteObservers;
 using Subjects;
-namespace Test
+namespace Patterns.TestObserver
 {
     public class ObserverTest
     {
-        public void Run()
+        public static void Run()
         {
+
             Subject Fridge = new Subject("SamsungFridge", 10000, "Out Of Stock");
             Observer user1 = new Observer("Mircea", Fridge);
             Observer user2 = new Observer("Mirela", Fridge);
