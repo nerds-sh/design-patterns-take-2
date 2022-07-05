@@ -6,13 +6,13 @@ namespace Patterns.Mediator
         {
             //this.name = name; ???
         }
-
-        public void send(string msg, string userID)
+        public override void send(string msg, string userID)
         {
             Console.WriteLine(this.getName() + "Sending message:" + msg);
             getMediatou().sendMessage(msg, userID);
         }
-        public void receive(string msg)
+
+        public override void receive(string msg)
         {
             Console.WriteLine(this.getName() + "Received message:" + msg);
         }
