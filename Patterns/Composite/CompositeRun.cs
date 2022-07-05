@@ -1,5 +1,3 @@
-using Patterns.Composite;
-
 namespace Patterns.Composite {
     public class Composite {
         public static void Run()
