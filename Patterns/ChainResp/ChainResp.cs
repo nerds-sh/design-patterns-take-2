@@ -3,7 +3,7 @@ namespace Patterns;
 
 public class ChainResp
 {
-    static void Run()
+    public static void Run()
     {
         Approver Amalia = new HeadChef();
         Approver Andrei = new PurchasingManager();
