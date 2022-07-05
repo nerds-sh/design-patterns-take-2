@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 ﻿using Decorator;
 using Patterns.Proxy.Test;
 
+=======
+>>>>>>> ebbf58a (Added observer design pattern)
 Patterns.Flyweight.Run();
 Patterns.Decorator.Run();
 Patterns.Composite.Composite.Run();
@@ -10,5 +13,9 @@ Patterns.Bridge.Bridge.Run();
 Patterns.TestObserver.ObserverTest.Run();
 Patterns.ChainResp.Run();
 Patterns.AdapterClasses.Program.Run();
+<<<<<<< HEAD
 
 Patterns.State.Run();
+=======
+Patterns.TestObserver.ObserverTest.Run();
+>>>>>>> ebbf58a (Added observer design pattern)
